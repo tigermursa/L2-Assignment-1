@@ -34,9 +34,18 @@ function filterByRating(
 
 //!Problem-3
 
-function concatenateArrays<T>(...arrays: T[][]): T[] {}
+function concatenateArrays<T>(...arrays: T[][]): T[] {
+  let newArray: T[] = []; //Q...,
+  for (let arr of arrays) {
+    newArray.push(...arr);
+  }
+  return newArray;
+}
+
+//console.log(concatenateArrays(["a", "b"], ["c"], ["d"]));
 
 //!Problem-4
+
 //!Problem-5
 //!Problem-6
 //!Problem-7
