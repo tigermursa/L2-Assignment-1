@@ -14,7 +14,7 @@ function filterByRating(
 }
 
 function concatenateArrays<T>(...arrays: T[][]): T[] {
-  let newArray: T[] = []; //Q...,
+  let newArray: T[] = [];
   for (let arr of arrays) {
     newArray.push(...arr);
   }
@@ -89,12 +89,11 @@ function getDayType(day: Day): string {
 
 async function squareAsync(n: number): Promise<number> {
   return new Promise((res, rej) => {
-    setTimeout(() => {
-      if (n < 0) {
-        rej(new Error("negative number not allowed!!"));
-      } else {
+    if (n < 0) {
+      rej(new Error("Negative number not allowed"));
+    } else
+      setTimeout(() => {
         res(n * n);
-      }
-    }, 1000);
+      }, 1000);
   });
 }
