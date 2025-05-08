@@ -1,3 +1,4 @@
+import { Super } from "./../node_modules/acorn/dist/acorn.d";
 //!Problem-1
 
 function formatString(input: string, toUpper?: boolean): string {
@@ -46,6 +47,34 @@ function concatenateArrays<T>(...arrays: T[][]): T[] {
 
 //!Problem-4
 
+class Vehicle {
+  private make: string;
+  private year: number;
+
+  constructor(make: string, year: number) {
+    this.make = make;
+    this.year = year;
+  }
+  getInfo() {
+    console.log(`Make:${this.make},Year:${this.year}`);
+  }
+}
+
+class Car extends Vehicle {
+  private model: string;
+
+  constructor(model: string, year: number, make: string) {
+    super(make, year);
+    this.model = model;
+  }
+  getModel() {
+    console.log(`Model:${this.model}`);
+  }
+}
+
+// const myCar = new Car("walton", 2000, "hello");
+// myCar.getInfo();
+// myCar.getModel();
 //!Problem-5
 //!Problem-6
 //!Problem-7
