@@ -1,6 +1,4 @@
-import { Super } from "./../node_modules/acorn/dist/acorn.d";
 //!Problem-1
-
 function formatString(input: string, toUpper?: boolean): string {
   if (toUpper === false) {
     return input.toLocaleLowerCase();
@@ -12,7 +10,6 @@ function formatString(input: string, toUpper?: boolean): string {
 //console.log(formatString("mursalin", true));
 
 //!Problem-2
-
 const books = [
   { title: "Book A", rating: 4.5 },
   { title: "Book A", rating: 4.0 },
@@ -34,7 +31,6 @@ function filterByRating(
 //console.log(filterByRating(books));
 
 //!Problem-3
-
 function concatenateArrays<T>(...arrays: T[][]): T[] {
   let newArray: T[] = []; //Q...,
   for (let arr of arrays) {
@@ -46,7 +42,6 @@ function concatenateArrays<T>(...arrays: T[][]): T[] {
 //console.log(concatenateArrays(["a", "b"], ["c"], ["d"]));
 
 //!Problem-4
-
 class Vehicle {
   private make: string;
   private year: number;
@@ -75,7 +70,19 @@ class Car extends Vehicle {
 // const myCar = new Car("walton", 2000, "hello");
 // myCar.getInfo();
 // myCar.getModel();
+
 //!Problem-5
+function processValue(value: string | number): number {
+  if (typeof value === "string") {
+    const length = value.length;
+    return length;
+  } else {
+    const multiplied = value * 2;
+    return multiplied;
+  }
+}
+
+// console.log(processValue(5));
 //!Problem-6
 //!Problem-7
 //!Problem-8
