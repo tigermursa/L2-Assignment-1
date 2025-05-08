@@ -84,5 +84,60 @@ function processValue(value: string | number): number {
 
 // console.log(processValue(5));
 //!Problem-6
+interface Product {
+  name: string;
+  price: number;
+}
+
+function getMostExpensiveProduct(products: Product[]): Product | null {
+  if (products.length === 0) return null;
+  let finalProduct = products.reduce((acc, cur) => {
+    return acc.price >= cur.price ? acc : cur;
+  });
+  return finalProduct;
+}
+
+// const products = [
+//   { name: "Pen", price: 10 },
+//   { name: "Notebook", price: 250 },
+//   { name: "Bag", price: 50 },
+// ];
+// console.log(getMostExpensiveProduct(products));
+
 //!Problem-7
+
+enum Day {
+  Monday,
+  Tuesday,
+  Wednesday,
+  Thursday,
+  Friday,
+  Saturday,
+  Sunday,
+}
+
+function getDayType(day: Day): string {
+  if (day === Day.Saturday || day === Day.Sunday) {
+    return "Weekday";
+  } else {
+    return "Weekend";
+  }
+}
+
+// console.log(getDayType(Day.Monday));
+// console.log(getDayType(Day.Sunday));
+
 //!Problem-8
+async function squareAsync(n: number): Promise<number> {
+  return new Promise((res, rej) => {
+    setTimeout(() => {
+      if (n < 0) {
+        rej(new Error("negative number not allowed!!"));
+      } else {
+        res(n * n);
+      }
+    }, 1000);
+  });
+}
+// squareAsync(4).then(console.log);
+// squareAsync(-3).then(console.error);
