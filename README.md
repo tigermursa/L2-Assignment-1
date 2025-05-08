@@ -23,7 +23,7 @@ so when we should use type or interface ? when we are going to work for only obj
 or if we are going to work with complex data then the type is the best for it.
 
 so we can say type is so flexible but interface is not and interface is easy to extend but type need & intersection ,so yeah hope you all know now
-when we will use interface and when we will use types
+when we will use interface and when we will use types.
 
 **Blog - 2 How does TypeScript help in improving code quality and project maintainability?**
 
@@ -34,6 +34,6 @@ environment but also increase the quality of the project.
 The main thing is JavaScript got the errors in runtime but if we use TypeScript we can see the errors on development time,
 thats helps a lot to do bad coding and make errors, TypeScripts helps us to getting error in future so its really a time saver.
 Yea writing TypeScript is some time consuming but at the end its really worth.Because it's prevent doing silly errors to the developers.
-So we need to use TypeScript if we wanna be next level developer
+So we need to use TypeScript if we wanna be next level developer.
 
 So when companies work in large scale project they uses TypeScript for better code quality and maintainability.
