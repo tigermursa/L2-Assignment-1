@@ -36,4 +36,4 @@ thats helps a lot to do bad coding and make errors, TypeScripts helps us to gett
 Yea writing TypeScript is some time consuming but at the end its really worth.Because it's prevent doing silly errors to the developers.
 So we need to use TypeScript if we wanna be next level developer
 
-So when companies work in large scale project they uses TypeScript for better code quality and maintainability
+So when companies work in large scale project they uses TypeScript for better code quality and maintainability.
